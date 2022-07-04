@@ -2,8 +2,10 @@ import './App.css';
 import { Component } from 'react';
 import AppMap from './components/AppMap';
 import { GoogleComponent } from 'react-google-location';
+import env from "react-dotenv";
 
-const API_KEY = 'AIzaSyAUIIXmJK44WSbu-8b6wOZXAlb4LweuMsM';
+
+const API_KEY = process.env.REACT_APP_API_KEY;
 
 class App extends Component {
   constructor(props) {
